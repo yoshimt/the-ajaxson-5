@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
 <html>
 <head>
     <title>The AJAXson 5</title>
@@ -6,16 +7,20 @@
     <script type="text/javascript" src="request-gif.js"></script>
 </head>
 <body>
+    <section id="bodyupper">
     <h1>The AJAXson 5</h1>
-
+</section>
+<section id="bodylower">
     <form id="form-gif-request" />
         <label>What kind of Jackson 5 related gif do you want?</label>
-        <input name="tag" type="text"/>
-        <input type="submit" value="Get my Gif!" />
-    </form>
+    </br></br>
 
+        <input name="tag" type="text" id="searchQuery"/>
+        <input type="submit" id="button1" value="Get my Gif!" />
+    </form>
+    <br><br>
     <img id="gif" src="" hidden="true"/>
     <p id="feedback" hidden="true`"></p>
-
+</section>
 </body>
 </html>

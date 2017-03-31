@@ -1,0 +1,47 @@
+
+
+#bodyupper {
+    text-align: center;
+    text-shadow: 1px 2px 2px black, 0 0 1em lightblue, 0 0 0.1em lightblue;
+       color: white;
+       font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+    background: grey;
+    padding: 2px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom:10px;
+    border-radius: 25px;
+}
+
+#bodylower {
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    font: 1em Georgia;
+   color: white;
+   border-radius: 25px;
+    text-shadow: 10px;
+    background: lightgrey;
+    padding:80px;
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#feedback {
+    text-align: center;
+    border-radius: 25px;
+    background: black;
+    color: yellow;
+    padding: 2px;
+    margin: 1px;
+    margin-left: 200px;
+    margin-right: 200px;
+    -ms-transform: rotate(7deg);
+-webkit-transform: rotate(7deg);
+transform: rotate(-15deg);
+}
+
+#button1 {
+    background: lightblue;
+    border-radius: 10px;
+}
