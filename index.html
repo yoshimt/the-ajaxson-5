@@ -15,8 +15,10 @@
         <label>What kind of Jackson 5 related gif do you want?</label>
     </br></br>
 
-        <input name="tag" type="text" id="searchQuery"/>
+        <input name="tag" type="text" id="searchQuery" required="required"/>
         <input type="submit" id="button1" value="Get my Gif!" />
+        <p>Prove you're not a robot by answering below:</p>
+        <input name="riddleAnswer" type="text" id="captcha" required="required"/><label> Jacksons are better than 1.</label>
     </form>
     <br><br>
     <img id="gif" src="" hidden="true"/>

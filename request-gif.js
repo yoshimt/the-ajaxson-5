@@ -1,23 +1,30 @@
 
-
 $(document).ready(function() {
     // register our function as the "callback" to be triggered by the form's submission event
-    $("#form-gif-request").submit(fetchAndDisplayGif); // in other words, when the form is submitted, fetchAndDisplayGif() will be executed
+        $("#form-gif-request").submit(fetchAndDisplayGif); // in other words, when the form is submitted, fetchAndDisplayGif() will be execute
+        $("#feedback").text("Loading your gif thing")
 });
-
-
 /**
  * sends an asynchronous request to Giphy.com aksing for a random GIF using the
  * user's search term (along with "jackson 5")
  *
  * upon receiving a response from Giphy, updates the DOM to display the new GIF
  */
+
+
 function fetchAndDisplayGif(event) {
 
-    // This prevents the form submission from doing what it normally does: send a request (which would cause our page to refresh).
-    // Because we will be making our own AJAX request, we dont need to send a normal request and we definitely don't want the page to refresh.
-    event.preventDefault();
 
+    event.preventDefault();
+    var riddleQuery = $(":input[name='riddleAnswer']").val();
+
+      // if we get the wrong answer error and quit
+       if (!(riddleQuery == "5" || riddleQuery.toLowerCase() == "five"))
+       {
+         $("#feedback").text("That ..... is incorrect.");
+         setGifLoadedStatus(false);
+         return;
+     }
     // get the user's input text from the DOM
     var searchQuery = "$(#searchQuery)"; // TODO should be e.g. "dance"
 
